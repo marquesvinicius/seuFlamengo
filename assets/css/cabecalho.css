@@ -1,0 +1,38 @@
+.cabecalho {
+    align-items: center;
+    background: #B93E3E;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+}
+
+.menu-lista {
+    display: flex;
+}
+
+.menu-link {
+    color: #FFFFFF;
+    margin-right: 1.25rem;
+    text-decoration: none;
+    text-transform: lowercase;
+    transition: 400ms;
+}
+
+.menu-link:hover {
+    font-size: 110%;
+}
+
+.menu-item {
+    list-style: none;
+    
+}
+
+.menu-item:last-child .menu-link {
+    margin-right: 0;
+}

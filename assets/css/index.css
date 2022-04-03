@@ -1,0 +1,88 @@
+.menu-item:first-child {
+    font-weight: bold;
+}
+
+.banner-pagina {
+    width: 100%;
+    height: 450px;
+    display: inline-block;
+    position:relative;
+}
+
+#banner {
+    width: 100%;
+    height: 100%;
+}
+
+figcaption {
+    position: absolute;
+    color: white;
+    padding-right: 40px;
+}
+#caption-veja {
+    font-weight: bold;
+    font-size: 36px;
+    top: 120px;
+    right: 20px;
+}
+
+#caption-site-feito {
+    font-size: 18px;
+    top: 160px;
+    right: 20px;
+}
+
+ .conteudo-principal-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+ }
+ 
+ .conteudo-principal-cards-item {
+    width: 200px;
+    height: 181px;
+    border: 5px solid #CDCDCD;
+    border-radius: 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    text-align: center;
+    position: relative;
+    margin: 1%;
+    transition: 500ms;
+    
+ }
+
+/*  .conteudo-principal-cards-item:hover {
+    width: 210px;
+    height: 190px;
+ } */
+
+ .conteudo-principal-cards-item a{
+    text-decoration: none;
+    color: #CDCDCD;
+    font-weight: bold;
+    display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 10%;
+	left: 0;
+ }
+
+ .conteudo-principal-cards-item-img {
+    width: 90px;
+    height: 95px;
+    justify-content: center;
+ }
+
+ #crf {
+    width: 90px;
+    height: 80px;
+ }
+
+ .desenvolvido-por {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-weight: bold;
+    color: #CDCDCD;
+ }
