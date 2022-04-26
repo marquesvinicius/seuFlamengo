@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 .menu-item:first-child {
     font-weight: bold;
 }
@@ -12,6 +16,8 @@
 #banner {
     width: 100%;
     height: 100%;
+
+    object-fit: fill;
 }
 
 figcaption {
@@ -85,4 +91,18 @@ figcaption {
     margin-top: 50px;
     font-weight: bold;
     color: #CDCDCD;
+ }
+
+ @media screen and (max-width: 480px) {
+    #caption-site-feito {
+        display: none;
+    }
+ }
+
+ @media screen and (max-width: 660px) {
+    #caption-site-feito {
+        font-size: 18px;
+        top: 160px;
+        right: 20px;
+    }
  }

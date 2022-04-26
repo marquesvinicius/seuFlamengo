@@ -7,24 +7,21 @@ h1 {
     font-size: 32px;
     color: #DBDBDB;
     text-align: center;
-    padding-top: 5px;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 290px;
-    margin-top: 0.5rem;
+    display: block;
+    justify-content: center;
+    padding-top: 0.75rem;
 }
 
 .conteudo-principal {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .campo {
-    position: relative;
-    width: 750px;
-    height: 760px;
+    width: 44vw;
+    height: 80vh;
     border: 8px solid #DBDBDB;
-    box-sizing: border-box;
+    overflow: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 15px;
     margin-left: 2rem;
@@ -90,22 +87,8 @@ h1 {
 }
 
 
-h2 {
-    font-weight: bold;
-    font-size: 32px;
-    color: #DBDBDB;
-    text-align: center;
-    padding-top: 5px;
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 290px;
-    margin-right: 250px;
-    margin-top: 0.5rem;
-}
-
 .divisoria {
     margin-top: 90px;
-    margin-left: 50px;
     border: 1px solid #DBDBDB;
 }
 
@@ -144,4 +127,46 @@ h2 {
     margin-top: 2rem;
     width: 35%;
     margin-left: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    .conteudo-principal {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .jogadores-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .jogadores-cards-defesa {
+        display: flex;
+        justify-content: center;
+        align-content: start;
+        overflow-y: auto;
+        direction: ltr;
+    }
+
+    .campo {
+        width: 90vw;
+        height: auto;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+
+    .divisoria {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .campo {
+        overflow: hidden;
+    }
 }

@@ -19,7 +19,7 @@
         "texto-vocepode"
         "redes-sociais";
     grid-template-columns: 12.5% 75% 12.5%;
-    grid-template-rows: 1fr 10px 1fr;
+    grid-template-rows: 1fr 20px 1fr;
     place-items: center;
     
 }
@@ -29,7 +29,7 @@
     text-align: center;
     grid-row: 3/3;
     grid-column: 2/2;
-    margin-bottom: 30vh;
+    margin-bottom: 10vh;
 }
 
 .redes-sociais-link {
@@ -59,14 +59,21 @@
 }
 
 #caption-criador {
+    grid-area: texto-vocepode;
     font-size: 20px;
     grid-column: 2 / 2;
     grid-row: 2/2;
-    margin-bottom: 30vh;
-    margin-top: 10vh;
 }
 
 .linkedin {
     text-align: center;
 }
+
+@media screen and (max-width: 480px) {
+    #caption-obrigado {
+        font-size: 48px;
+        grid-column: 2 / 2;
+        font-weight: bold;
+    }
+ }
 
