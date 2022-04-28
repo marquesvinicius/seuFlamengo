@@ -18,10 +18,9 @@ h1 {
 }
 
 .campo {
-    width: 44vw;
-    height: 80vh;
+    width: min-content;
+    height: min-content;
     border: 8px solid #DBDBDB;
-    overflow: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 15px;
     margin-left: 2rem;
@@ -31,11 +30,9 @@ h1 {
 .circle {
     border: 5px solid #DBDBDB;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
     position: absolute;
-    width: 375px;
-    height: 300px;
+    width: 20.8rem;
+    height: 16.7rem;
     top: 180px;
     z-index: 80;
 
@@ -67,8 +64,8 @@ h1 {
 }
 
 .jogadores-cards-item {
-    width: 140px;
-    height: 185px;
+    width: 8rem;
+    height: 11rem;
     margin-left: 30px;
     margin-right: 30px;
     transition: 600ms;
@@ -117,56 +114,68 @@ h1 {
     font-size:30px
 }
 
-.div2 {
-    display: flex;
-    justify-content: center;
-}
-
-.divisoria-2 {
-    border: 1px solid #DBDBDB;
-    margin-top: 2rem;
-    width: 35%;
-    margin-left: 40px;
-}
-
-@media screen and (max-width: 1000px) {
-    .conteudo-principal {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .jogadores-cards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        overflow: hidden;
-    }
-
-    .jogadores-cards-defesa {
-        display: flex;
-        justify-content: center;
-        align-content: start;
-        overflow-y: auto;
-        direction: ltr;
-    }
-
-    .campo {
-        width: 90vw;
-        height: auto;
-        margin-left: 0;
-        margin-top: 1rem;
+@media screen and (min-width: 280px) {
+    .jogadores-cards-item {
+        width: 5rem;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
     }
 
     .divisoria {
-        margin-top: 10px;
-        width: 100%;
+        margin-bottom: 2rem;
+        margin-top: auto 3rem;
     }
 }
 
-@media screen and (min-width: 900px) {
-    .campo {
-        overflow: hidden;
+@media screen and (min-width: 430px) {
+    .jogadores-cards-item {
+        width: 5.5rem;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
     }
 }
+
+
+@media screen and (min-width: 520px) {
+    .jogadores-cards-item {
+        width: 7rem;
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+    } 
+}
+
+@media screen and (min-width: 660px) {
+    .jogadores-cards-item {
+        width: 7.5rem;
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+    } 
+}
+
+@media screen and (min-width: 780px) {
+    .jogadores-cards-item {
+        width: 8rem;
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+    } 
+}
+
+@media screen and (max-width: 970px) {
+    .conteudo-principal {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .divisoria {
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .campo {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+

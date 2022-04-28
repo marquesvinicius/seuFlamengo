@@ -1,14 +1,10 @@
-body {
-    overflow: hidden;
-}
-
 .menu-item:first-child {
     font-weight: bold;
 }
 
 .banner-pagina {
     width: 100%;
-    height: 450px;
+    height: 25rem;
     display: inline-block;
     position:relative;
 }
@@ -27,7 +23,7 @@ figcaption {
 }
 #caption-veja {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 2rem;
     top: 120px;
     right: 20px;
 }
@@ -41,12 +37,12 @@ figcaption {
  .conteudo-principal-cards {
     display: flex;
     justify-content: center;
-    margin-top: 75px;
+    margin-top: 4.2rem;
  }
  
  .conteudo-principal-cards-item {
-    width: 200px;
-    height: 181px;
+    width: 11.1rem;
+    height: 10rem;
     border: 5px solid #CDCDCD;
     border-radius: 15px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -75,34 +71,68 @@ figcaption {
  }
 
  .conteudo-principal-cards-item-img {
-    width: 90px;
-    height: 95px;
+    width: 5rem;
+    height: 5.3rem;
     justify-content: center;
  }
 
  #crf {
-    width: 90px;
-    height: 80px;
+    width: 5rem;
+    height: 4.4rem;
  }
 
  .desenvolvido-por {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 3rem;
     font-weight: bold;
     color: #CDCDCD;
  }
 
- @media screen and (max-width: 480px) {
+ @media screen and (max-width: 659px) {
+    .banner-pagina {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+
+    figcaption{
+        position: unset;
+        padding-right: 0;
+    }
+
+    #caption-veja {
+        font-weight: bold;
+        font-size: 36px;
+        top: 0;
+        right: 0;
+        margin: 1rem;
+        font-size: 1.8rem;
+    }
+    
+
     #caption-site-feito {
         display: none;
     }
+
+    .conteudo-principal-cards-item {
+        font-size: 12px;
+    }
+
  }
 
  @media screen and (max-width: 660px) {
+    .conteudo-principal-cards {
+        margin-top: 2rem;
+     }
+
     #caption-site-feito {
         font-size: 18px;
         top: 160px;
         right: 20px;
     }
+
+    .desenvolvido-por {
+        margin-top: 2rem;
+     }
  }
